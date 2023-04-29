@@ -1,4 +1,4 @@
 require("sleepyteas.set")
 require("sleepyteas.lsp")
+require("sleepyteas.null-ls")
 
--- vim.cmd [[autocmd BufWritePre * lua vim.lsp.buf.format()]]

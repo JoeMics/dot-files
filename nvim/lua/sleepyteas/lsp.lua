@@ -37,10 +37,6 @@ lspconfig.tsserver.setup({
 
   -- lsp will ignore single files. This means a package.json is required for all js/ts files
   single_file_support = false,
-
-  init_options = {
-    lint = true,
-  },
 })
 
 lsp.setup()
