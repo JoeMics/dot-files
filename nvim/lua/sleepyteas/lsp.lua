@@ -7,7 +7,7 @@ end)
 
 lsp.ensure_installed({
 	'tsserver',
-	'denols',
+	-- 'denols',
 	'volar',
     'bashls',
     'emmet_ls',
@@ -30,13 +30,13 @@ lspconfig.denols.setup({
 })
 
 lspconfig.tsserver.setup({
-  on_attach = on_attach,
+    on_attach = on_attach,
 
-  -- to make sure deno files don't use this
-  root_dir = lspconfig.util.root_pattern("package.json"),
+    -- to make sure deno files don't use this
+    root_dir = lspconfig.util.root_pattern("package.json"),
 
-  -- lsp will ignore single files. This means a package.json is required for all js/ts files
-  single_file_support = false,
+    -- lsp will ignore single files. This means a package.json is required for all js/ts files
+    single_file_support = false,
 })
 
 lsp.setup()
