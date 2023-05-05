@@ -10,6 +10,9 @@ vim.opt.expandtab = true
 
 vim.opt.smartindent = true
 
+-- for auto-commenting on new line
+vim.opt.formatoptions:append("r")
+
 -- maybe I'll use this some day
 -- vim.opt.undodir = {os.getenv("HOME") .. "/.vim/undodir"}
 
