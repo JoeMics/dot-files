@@ -10,15 +10,13 @@ end)
 
 lsp.ensure_installed({
     'tsserver',
-    -- 'denols',
+    'denols',
     'volar',
     'bashls',
     'emmet_ls',
     'eslint',
     'html',
     'lua_ls',
-    -- 'markdownlint',
-    -- 'prettier',
 })
 
 
