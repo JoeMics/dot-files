@@ -55,6 +55,8 @@ return require('packer').startup(function(use)
         requires = { 'nvim-tree/nvim-web-devicons', opt = true }
     }
 
+    use 'github/copilot.vim'
+
     -- color schemes
     use "EdenEast/nightfox.nvim"
     use "ellisonleao/gruvbox.nvim"

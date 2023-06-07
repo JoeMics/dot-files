@@ -17,3 +17,8 @@ Install GNU compiler tools for treesitter
 ```
 sudo apt-get install build-essential gdb
 ```
+
+### Seting up copilot
+```
+:Copilot setup
+```
