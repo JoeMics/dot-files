@@ -57,6 +57,12 @@ return require('packer').startup(function(use)
 
     use 'github/copilot.vim'
 
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
+
+
     -- color schemes
     use "EdenEast/nightfox.nvim"
     use "ellisonleao/gruvbox.nvim"
