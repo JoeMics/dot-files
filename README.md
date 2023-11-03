@@ -22,3 +22,9 @@ sudo apt-get install build-essential gdb
 ```
 :Copilot setup
 ```
+
+## Updating Changes to Config
+```
+:PackerSync
+:TSUpdate
+```
