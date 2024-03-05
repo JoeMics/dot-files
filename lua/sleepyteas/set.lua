@@ -23,4 +23,6 @@ vim.opt.updatetime = 50
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
-vim.keymap.set('n', '<leader>ff', vim.lsp.buf.format)
+vim.keymap.set("", "<leader>ff", function()
+    require("conform").format({ async = true, lsp_fallback = true })
+end, { desc = "[F]ormat" })

@@ -37,7 +37,7 @@ return require('packer').startup(function(use)
         }
     }
 
-    use 'jose-elias-alvarez/null-ls.nvim'
+    -- use 'jose-elias-alvarez/null-ls.nvim'
 
     use 'mbbill/undotree'
 
@@ -63,6 +63,20 @@ return require('packer').startup(function(use)
         config = function() require("nvim-autopairs").setup {} end
     }
 
+    use {
+        "stevearc/conform.nvim",
+        config = function()
+            require("conform").setup({
+                formatters_by_ft = {
+                    lua = { "stylua" },
+                    -- Conform will run multiple formatters sequentially
+                    python = { "isort", "black" },
+                    -- Use a sub-list to run only the first available formatter
+                    javascript = { { "prettierd", "prettier" } },
+                },
+            })
+        end,
+    }
 
     -- color schemes
     use "EdenEast/nightfox.nvim"

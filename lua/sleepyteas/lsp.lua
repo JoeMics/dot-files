@@ -9,8 +9,6 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.ensure_installed({
-    'tsserver',
-    'denols',
     'volar',
     'bashls',
     'emmet_ls',
