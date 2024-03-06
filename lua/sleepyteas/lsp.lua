@@ -33,6 +33,17 @@ lspconfig.tsserver.setup({
 
     -- lsp will ignore single files. This means a package.json is required for all js/ts files
     single_file_support = false,
+
+    init_options = {
+        preferences = {
+            importModuleSpecifierPreference = 'non-relative',
+
+            -- Vue + JS will not auto-import properly without this
+            javascript = {
+                importModuleSpecifierPreference = 'non-relative'
+            }
+        },
+    }
 })
 
 
